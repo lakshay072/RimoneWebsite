@@ -1,0 +1,170 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: 0;
+}
+
+/*--------------------------------- icon codes and color start ---------------------------------*/
+.twittericon-color
+{
+	color:#1DA1F2;
+}
+.youtubeicon-color
+{
+	color:#FF0000;
+}
+/*--------------------------------- icon codes and color end ---------------------------------*/
+
+/*------------------------------------ slider start ---------------------------------------*/
+.carousel-height
+{
+	height: 450px;
+}
+
+.carousel-height img
+{
+	height: 450px;
+	object-fit:fill;
+	background-position:bottom;
+}
+
+.carousel-content-row
+{
+	width:80%;
+	height:220px;
+	
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 40%;
+  left: 15%;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+}
+.carousel-content-btn
+{
+	font-size: 15px;
+}
+/*------------------------------------ slider start ---------------------------------------*/
+
+/*--------------------------- newsroom section end ----------------------------------*/
+.newsroom-title a
+{
+	text-decoration: none;
+	color:#000000;
+}
+	
+.newsroom-title a:hover
+{
+	text-decoration: none;
+	color:#17a2b8!important;
+}
+
+.newsroom-tittle-date
+{
+	font-size: 14px;
+}
+
+.newsroom-title-heading
+{
+	font-size:32px;
+	color:#a19535;
+	line-height: 1.4em;
+}
+
+.newsroom-imgthumnail
+{
+	width: 	290px;
+	height: 192px;
+	object-fit: cover;
+}
+
+.newsroom-title-description
+{
+	font-size:15px;
+}
+
+.newsroom-title-description-readmore 
+{
+	font-size:15px;	
+}
+
+.newsroom-title-description-morecontent span {
+    display: none;
+}
+.newsroom-title-description-morelink {
+    display: block;
+}
+
+/*--------------------------- newsroom section end ----------------------------------*/
+
+/*--------------------------- Images section start ----------------------------------*/
+
+
+.images-gallery-title a
+{
+	text-decoration: none;
+	color:#000000;
+}
+	
+.images-gallery-title a:hover
+{
+	text-decoration: none;
+	color:#17a2b8!important;
+}
+
+.images-gallery-title-description
+{
+	font-size:15px;
+	
+}
+
+.images-gallery-title-description-readmore 
+{
+	font-size:15px;
+	font-weight: bold;
+	
+}
+
+/*--------------------------- Images section end ----------------------------------*/
+
+/*------------------------------- videos section start ------------------------------------*/
+
+.videos-gallery-title a
+{
+	text-decoration: none;
+	color:#000000;
+}
+	
+.videos-gallery-title a:hover
+{
+	text-decoration: none;
+	color:#17a2b8!important;
+}
+
+.videos-gallery-imgthumnail
+{
+	width: 	290px;
+	height: 192px;
+}
+
+.videos-gallery-title-description
+{
+	font-size:15px;
+	
+}
+
+.videos-gallery-title-description-readmore 
+{
+	font-size:15px;
+	font-weight: bold;
+	
+}
+
+/*------------------------------- videos section end ------------------------------------*/
+
