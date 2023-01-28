@@ -3,10 +3,13 @@
 <head>
     <meta charSet="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+       <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> 
+     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet"> 
     <link rel="stylesheet" type="text/css" href="assets/css/default.css">
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/owl.css">
-	<link rel="stylesheet"  type="text/css" href="assets/css/mycustom.css">
+	<link rel="stylesheet"  type="text/css" href="assets/css/myCustom.css">
     <link rel="stylesheet" type="text/css" href="#">
     <link href="assets/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -24,7 +27,54 @@
 
 </head>
 <body class="contact">
-	<header>
+  <header>
+    <div class="header-innerwrapper">
+        <div class="logo col-md-4  col-sm-4 col-xs-2">
+            <a href="index.html"><img src="assets/images/logo.png" />
+        </div>
+
+        <div class="menu col-md-8 col-sm-8 col-xs-10"  style="height: 6rem;line-height: 3;left: 18%;position: absolute;">
+            <div class="nav-wrapper">
+                <a href="#menu" class="menu-link">&#9776;</a>
+                <nav id="menu" class="panel" role="navigation">
+                    <div class="site-identity">
+                        <a href="index.html"><img src="assets/images/logo.png" />
+                    </div>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="solution.html">Solution</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+
+                    <div class="appsd"  style="text-align: center">
+                        <a href="#"><img src="assets/images/Home/istore.png" /></a>
+                        <a href="#"><img src="assets/images/Home/gstore.png" /></a>
+                    </div>
+                </nav>
+
+                <ul id="bmenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="solution.html">Solution</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="video-background"> -->
+        <!-- <video loop="" muted="" autoplay="" playsinline="" poster="">
+            <source src="assets/images/Home/bgvid.mp4" type="video/mp4">
+        </video> -->
+
+    <!-- </div> -->
+    <div class="image-bg">
+    <img src="https://cdn.fstoppers.com/styles/full/s3/media/2020/12/21/nando-vertical-horizontal-11.jpg" width= "100%" height= "300px">
+      </div>
+</header>
+	<!-- <header>
         <div class="header-innerwrapper">
             <div class="logo col-md-4  col-sm-4 col-xs-2">
                 <img src="assets/images/logo.png" />
@@ -61,9 +111,115 @@
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
+    <!-- <main id="main" data-aos="fade" data-aos-delay="1500"> -->
 
-    <div id="page" class="">
+        <!-- ======= End Page Header ======= -->
+        <!-- <div class="page-header d-flex align-items-center"> -->
+          <!-- <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-6 text-center">
+                <h2>Contact</h2>
+                <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+    
+              </div>
+            </div>
+          </div> -->
+        <!-- </div>End Page Header -->
+        <!-- <div id="page" class="">
+          <div class="pcontainer-wrapper">
+        <h3>CONTACT RIMONE</h3>
+        <p style="text-align: center">
+        We aim to bring emobility in India by creating a nationwide network of charging stations for<br> electric vehicles. So that people can move freely in their electric vehicles without worrying about <br>their next charge. We want to make EV charging convenient, reliable and affordable.
+        </p>
+       -->
+        <!-- ======= Contact Section ======= -->
+        <!-- <section id="contact" class="contact">
+          <div class="container">
+    
+            <div class="row gy-4 justify-content-center">
+    
+              <div class="col-lg-3">
+                <div class="info-item d-flex">
+                  <i class="bi bi-geo-alt flex-shrink-0"></i>
+                  <div>
+                    <h4>Location:</h4>
+                    <p>A108 Adam Street, New York, NY 535022</p>
+                  </div>
+                </div>
+              </div>
+    
+               <div class="col-lg-3">
+                <div class="info-item d-flex">
+                  <i class="bi bi-envelope flex-shrink-0"></i>
+                  <div>
+                    <h4>Email:</h4>
+                    <p>info@example.com</p>
+                  </div>
+                </div>
+              </div> 
+    
+              <div class="col-lg-3">
+                <div class="info-item d-flex">
+                  <i class="bi bi-phone flex-shrink-0"></i>
+                  <div>
+                    <h4>Call:</h4>
+                    <p>+1 5589 55488 55</p>
+                  </div>
+                </div>
+              </div>
+    
+            </div> -->
+    
+            <!-- <div class="row justify-content-center mt-4">
+    
+              <div class="col-lg-9">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="First Name" required>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Last Name" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 mt-md-0">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                    </div>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                  </div>
+                  <div class="form-group mt-3">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                  </div>
+                  <div class="my-3">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                  </div>
+                  
+                  <!-- <div class="btns" style="text-align:center">
+                    <a href="">Send Message</a>
+                </div> -->
+                  <!-- <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+              </div><!-- End Contact Form -->
+    
+            <!-- </div>
+    
+          </div>  -->
+        <!-- </section><!-- End Contact Section -->
+        <!-- </div>
+        </div>  -->
+    
+      <!-- </main> -->
+    <!-- <div id="page" class="">
         <div class="pcontainer-wrapper">
       <h3>CONTACT RIMONE</h3>
       <hr>
@@ -73,14 +229,14 @@
                   <span>Let us help You!!!</span>
                   <div class="form">
 
-                      <form action="https://formspree.io/f/xknagdyk" method="POST"  >
+                      <form aria-live="polite" data-ux="Form" class="contactForm" onsubmit="return false;">
                           <input type="text" placeholder="First Name*" name="first" required />
                           <input type="text" placeholder="Last Name*" name="last" required />
                           <input type="email" placeholder="Email*" name="email" required />
                           <input type="tel" placeholder="Phone Number*" name="phone" required />
                           <input type="text" placeholder="Company Name*" name="company" required />
                           <textarea placeholder="Message" name="message" required ></textarea>
-                          <button type="submit">SEND</button>
+                          <input type="submit" value="SEND" onclick="sendMail()" />
                           <p>
                             
                           </p>
@@ -107,8 +263,177 @@
         </div>
 
     </div>
-    </div>
+    </div> -->
+    <!-- <section id="contact" class="contact">
+      <div class="container">
 
+        <div class="section-header">
+          <h2>Contact Us</h2>
+          <p>Ea vitae aspernatur deserunt voluptatem impedit deserunt magnam occaecati dssumenda quas ut ad dolores adipisci aliquam.</p>
+        </div>
+
+      </div>
+
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+      </div><!-- End Google Maps -->
+
+      <!-- <div class="container">
+
+        <div class="row gy-5 gx-lg-5">
+
+          <div class="col-lg-4">
+
+            <div class="info">
+              <h3>Get in touch</h3>
+              <p>Et id eius voluptates atque nihil voluptatem enim in tempore minima sit ad mollitia commodi minus.</p>
+
+              <div class="info-item d-flex">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h4>Location:</h4>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <!-- <div class="info-item d-flex"> -->
+                <!-- <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h4>Email:</h4>
+                  <p>info@example.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <!-- <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Call:</h4>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            <!-- </div>
+
+          </div>  -->
+
+          <!-- <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div> -->
+              <!-- <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+<!-- 
+        </div> --> 
+
+      <!-- </div>  
+    </section>  -->+
+    <div id="page1" class="">
+      <!-- <div class="contactrim"> -->
+      <div class="pcontainer-wrapper">
+       
+    <h3>CONTACT RIMONE</h3>
+    <div class="para">
+    <p  >
+    We aim to bring emobility in India by creating a nationwide network of charging stations for<br> electric vehicles. So that people can move freely in their electric vehicles without worrying about <br>their next charge. We want to make EV charging convenient, reliable and affordable.
+    </p>
+    </div>
+   
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <!-- <div> -->
+          <!-- <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe> -->
+        <!-- </div> -->
+
+        <div class="row gy-4 mt-4">
+
+          <div class="col-lg-4">
+
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Location:</h4>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+
+              <a href="mailto:email@example.com" id="atag"><i class="bi bi-envelope flex-shrink-0"></i></a>
+              <div>
+                <h4>Email:</h4>
+                <!-- <a href="mailto:email@example.com"><p>info@gmail.com</p></a> -->
+                <p>info@example.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex">
+              <a href="tel:123-456-7890" id="atag"><i class="bi bi-phone flex-shrink-0"></i></a> 
+              <div>
+                
+                <h4>Call:</h4>
+               <p>+91- 9876543210</p>
+                <!-- <p>+1 5589 55488 55</p> -->
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="First Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Last Name" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="email" class="form-control" name="subject" id="subject" placeholder="Email" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="number" class="form-control" name="subject" id="subject" placeholder="Phone Number" required>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <!-- <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div> -->
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+    </section>
+    </div>
+    </div>
     <div id="footer"></div>
 
 </body>
