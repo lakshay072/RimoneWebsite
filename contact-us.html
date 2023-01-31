@@ -424,7 +424,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <div class="text-center" onclick="sendEmail()"><button type="submit">Send Message</button></div>
+              <div class="text-center" onclick="sendEmail()"><button class="btn btn-primary" type="submit">Send Message</button></div>
             
           </div><!-- End Contact Form -->
         </form>
@@ -457,7 +457,7 @@
                 Subject: "New entry from Contact-Us",
                 Body: body
             }).then(
-                message => alert(message)
+                message => alert("Sent Successfully.")
             );
         }
     </script>
