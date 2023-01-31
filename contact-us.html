@@ -398,43 +398,69 @@
           </div>
           
           <div class="col-lg-8">
-            <form action="https://formspree.io/f/xknagdyk" method="post" role="form">
+          <form>
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="First Name" required>
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="text" class="form-control" name="name" id="name" placeholder="Last Name" required>
+                  <input type="text" class="form-control" name="name" id="lastName" placeholder="Last Name" required>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="email" class="form-control" name="subject" id="subject" placeholder="Email" required>
+                <input type="email" class="form-control"  id="email" placeholder="Email" required>
               </div>
               <div class="form-group mt-3">
-                <input type="number" class="form-control" name="subject" id="subject" placeholder="Phone Number" required>
+                <input type="number" class="form-control" id="phoneNumber" placeholder="Phone Number" required>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                <input type="text" class="form-control"  id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                <textarea class="form-control" id="message" rows="3" placeholder="Message" required></textarea>
               </div>
               <!-- <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+              <div class="text-center" onclick="sendEmail()"><button type="submit">Send Message</button></div>
+            
           </div><!-- End Contact Form -->
-
+        </form>
         </div>
 
       </div>
     </section>
     </div>
     </div>
-    <div id="footer"></div>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            let name = document.getElementById("name").value;
+            let last_name = document.getElementById("lastName").value;
+            let email = document.getElementById("email").value;
+            let phone_no = document.getElementById("phoneNumber").value;
+            let subject = document.getElementById("subject").value;
+            let message = document.getElementById("message").value;
+
+            let body = "First Name : " + name + "<br/> Last Name : " + last_name + "<br/> Email : " + email + "<br/> Phone Number : " + phone_no + 
+            "<br/> Subject : " + subject + "<br/> Message : " + message;
+            
+            console.log(body);
+
+            Email.send({
+                SecureToken : "eb15f338-b79c-413c-8c75-92fb3e44e182",
+                To: 'lakshay072@gmail.com',
+                From: "headhunter0109@gmail.com",
+                Subject: "New entry from Contact-Us",
+                Body: body
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
 
 </body>
 </html>
