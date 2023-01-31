@@ -398,7 +398,7 @@
           </div>
           
           <div class="col-lg-8">
-          <form onsubmit="return false; reset();">
+          <form onsubmit="sendEmail(); return false;">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="First Name" required>
@@ -424,7 +424,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div> -->
-              <div class="text-center" onclick="sendEmail()"><button class="btn btn-primary" type="submit">Send Message</button></div>
+              <div class="text-center"><button class="btn btn-primary mb-4" type="submit">Send Message</button></div>
             
           </div><!-- End Contact Form -->
         </form>
@@ -444,7 +444,6 @@
             let phone_no = document.getElementById("phoneNumber").value;
             let subject = document.getElementById("subject").value;
             let message = document.getElementById("message").value;
-
             let body = "First Name : " + name + "<br/> Last Name : " + last_name + "<br/> Email : " + email + "<br/> Phone Number : " + phone_no + 
             "<br/> Subject : " + subject + "<br/> Message : " + message;
             
