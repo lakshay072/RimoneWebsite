@@ -398,7 +398,7 @@
           </div>
           
           <div class="col-lg-8">
-          <form>
+          <form onsubmit="return false; reset();">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="First Name" required>
@@ -457,7 +457,7 @@
                 Subject: "New entry from Contact-Us",
                 Body: body
             }).then(
-                message => alert("Sent Successfully.")
+                message => alert("Sent")
             );
         }
     </script>
