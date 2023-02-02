@@ -131,6 +131,21 @@
 	  transform: rotate(360deg);
 	}
   }
+btn{
+	background: #ffc90e;
+	border: 0;
+	padding: 10px 35px;
+	color: black;
+	/* font-weight: 500; */
+	transition: 0.4s;
+	border-radius: 5px;
+ }
+ .btn :hover{
+	
+	background: #a19535;
+	color:#fff
+  
+ }
 .para {
 	text-align:center; 
 	font-family: 'Open Sans';
