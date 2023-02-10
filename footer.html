@@ -38,7 +38,10 @@
     <!-- 2.1 Creidts / T&C -->
     <div class="credit">
         <div class="cc col-md-4 col-sm-4 col-xs-12">
-            Copyright © 2022 Rimone - All Rights Reserved.
+            <p class="copyright">
+                &copy; Copyright  <span id="currentYear"></span> Rimone - All Rights Reserved.</p>
+            </p>
+            
         </div>
         <div class="terms col-md-4 col-sm-4 col-xs-12">
             <a href="">Terms of Services</a> | <a href="">Privacy Policy</a>
@@ -53,3 +56,8 @@
     </div>
 
 </div>
+<script>
+    var date = new Date();
+    var year = date.getHours();
+    document.getElementById('currentYear').innerHTML = year;
+</script>
