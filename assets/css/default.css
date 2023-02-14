@@ -1,9 +1,9 @@
+/* BODY FOR ALL PAGES*/
 body {
-    display:none;
+    display: none;
     overflow-x: hidden;
-    font-family: arimo !important
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 
 body :root .safari_only #page,
 body _::-webkit-full-page-media #page,
@@ -11,13 +11,17 @@ body _:future #page {
     margin-top: 0 !important
 }
 
+/* Body header for every page*/
+
 body header {
     overflow: hidden;
     background: url("../../assets/images/bgvid.mp4")
 }
-
+*
+/* ********************************************************  Home Bar  ********************************************************* */
+/* HOME BAR - Background */
 body header .header-innerwrapper {
-    background: #000000cf;
+    background: black;
     position: fixed;
     width: 100%;
     z-index: 999999;
@@ -27,19 +31,14 @@ body header .header-innerwrapper {
 @media screen and (max-width:768px) {
     body header .header-innerwrapper {
         padding: 5px 0;
-        background: black
+        background: black;
     }
 }
 
+/* HOME BAR - Logo Width */
 @media screen and (min-width:768px) {
     body header .header-innerwrapper .logo {
         width: 23%
-    }
-}
-
-@media screen and (max-width:768px) {
-    body header .header-innerwrapper .logo {
-        padding: 0 5px !important
     }
 }
 
@@ -47,20 +46,17 @@ body header .header-innerwrapper .logo img {
     width: 60px
 }
 
+/* HOME BAR - Logo Padding */
+@media screen and (max-width:768px) {
+    body header .header-innerwrapper .logo {
+        padding: 0 5px !important
+    }
+}
+
+
+/* HOME BAR - For Small Screens (3dots/lines) */
 body header .header-innerwrapper .menu .nav-wrapper {
     text-align: right
-}
-
-body header .header-innerwrapper .menu .nav-wrapper #bmenu {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%
-}
-
-body header .header-innerwrapper .menu .nav-wrapper #bmenu li {
-    width: 15%;
-    font-weight: bold
 }
 
 body header .header-innerwrapper .menu .nav-wrapper .menu-link {
@@ -80,15 +76,32 @@ body header .header-innerwrapper .menu .nav-wrapper .menu-link {
     }
 }
 
+/* HOME BAR - For Small Screens (full menu) */
+body header .header-innerwrapper .menu .nav-wrapper #bmenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%
+}
+
+body header .header-innerwrapper .menu .nav-wrapper #bmenu li {
+    width: 15%;
+    font-weight: bold
+}
+
+/* HOME BAR - For Small Screens - Dropdown Menu */
+
 body header .header-innerwrapper .menu .nav-wrapper #menu.panel {
     -webkit-box-shadow: 1px 1px 5px grey;
     box-shadow: 1px 1px 5px grey
 }
 
+/* HOME BAR - For Small Screens - Dropdown Menu */
+
 body header .header-innerwrapper .menu .nav-wrapper #menu.panel .site-identity {
     text-align: center
 }
-
+/* HOME BAR - Logo for Site Idendity */
 body header .header-innerwrapper .menu .nav-wrapper #menu.panel .site-identity img {
     width: 60px;
     margin: 20px 0
@@ -97,20 +110,20 @@ body header .header-innerwrapper .menu .nav-wrapper #menu.panel .site-identity i
 body header .header-innerwrapper .menu .nav-wrapper #menu.panel ul {
     padding: 0
 }
-
+/* HOME BAR => For Small Screens => Dropdown Menu => List Properties  */
 body header .header-innerwrapper .menu .nav-wrapper #menu.panel ul li {
     list-style: none;
     text-align: left
 }
-
+/* HOME BAR => For Small Screens => Dropdown Menu => List Properties => Color of Text  */
 body header .header-innerwrapper .menu .nav-wrapper #menu.panel ul li a {
     display: block;
     margin-bottom: 7px;
     text-align: center;
     font-weight: bold;
-    color: black
+    color: rgb(0, 0, 0)
 }
-
+/* HOME BAR - App Logos */
 body header .header-innerwrapper .menu .nav-wrapper #menu.panel .appsd {
     margin: 0 10px;
     margin-top: 20px
@@ -120,7 +133,7 @@ body header .header-innerwrapper .menu .nav-wrapper #menu.panel .appsd a img {
     width: 70%;
     margin-bottom: 20px
 }
-
+/* HOME BAR - Animation for HOME BAR */
 @media screen and (max-width:768px) {
     body header .header-innerwrapper .menu .nav-wrapper ul#bmenu {
         padding: 0;
@@ -148,6 +161,10 @@ body header .header-innerwrapper .menu .nav-wrapper ul#bmenu li a {
     }
 }
 
+
+/* *******************************************************  Home Page  ******************************************************** */
+/******** Section 1 *********/
+/* 1.1 Home page video  */
 body header .video-background {
     top: 0;
     right: 0;
@@ -155,21 +172,59 @@ body header .video-background {
     left: 0;
     z-index: -99
 }
-
 @media screen and (max-width:768px) {
     body header .video-background {
         margin-top: 55px
     }
 }
-
 body header .video-background video {
     width: 100%
 }
-
 body .home header {
     max-height: 700px
 }
-
+/******** Section 2 *********/
+/* 2.1 Coloum layout padding */ 
+body #page .service {
+    padding: 40px 0;
+    text-align: center
+}
+/* 2.2 H3 heading tag on home page */ 
+body #page .service h3 {
+    text-align: center;
+    color: #a19535;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px
+}
+/* 2.2.1 Horizontal line */
+body #page .service hr {
+    width: 50px;
+    border: 1px solid #efefef
+}
+/* 2.3 Coloumn layout */
+@media screen and (max-width:768px) {
+    body #page .service .item-wrapper {
+        margin-bottom: 50px
+    }
+}
+/* 2.3.1 Heading text for each coloumn */
+body #page .service .item-wrapper span {
+    display: block;
+    font-size: x-large
+}
+/* 2.3.2 Images for coloumn layout */
+body #page .service .item-wrapper img {
+    width: 100%
+}
+/* 2.3.3 Content for each coloumn */
+body #page .service .item-wrapper p.sinfo {
+    font-size: 15px;
+    color: grey;
+    line-height: 28px;
+    margin-bottom: 20px
+}
+/* 2.4 Button across whole page */
 body .btns a {
     display: inline-block;
     background: #ffc90e;
@@ -178,7 +233,8 @@ body .btns a {
     color: black;
     font-weight: 600
 }
-
+/******** Section 3 *********/
+/* 3.1 Brochure with slide */
 @media screen and (max-width:768px) {
     body .hero .items {
         display: -webkit-box;
@@ -202,66 +258,26 @@ body .btns a {
         order: 1
     }
 }
-
-body #page .service {
-    padding: 40px 0;
-    text-align: center
-}
-
-body #page .service h3 {
-    text-align: center;
-    color: #a19535;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 10px
-}
-
-body #page .service hr {
-    width: 50px;
-    border: 1px solid #efefef
-}
-
-@media screen and (max-width:768px) {
-    body #page .service .item-wrapper {
-        margin-bottom: 50px
-    }
-}
-
-body #page .service .item-wrapper span {
-    display: block;
-    font-size: x-large
-}
-
-body #page .service .item-wrapper img {
-    width: 100%
-}
-
-body #page .service .item-wrapper p.sinfo {
-    font-size: 15px;
-    color: grey;
-    line-height: 28px;
-    margin-bottom: 20px
-}
-
+/* 3.1.1 Images CSS */
 body #page .hero .img-wrapper img {
     width: 100%;
     border-radius: 10px
 }
-
+/* 3.1.2 Heading text for slide */
 body #page .hero .htext span {
     display: inline-block;
     margin: 20px 0;
     color: grey;
     font-size: 17px
 }
-
+/* 3.1.3 H4 heading tag */
 body #page .hero .htext h4 {
     font-size: 32px;
     color: #a19535;
     margin-bottom: 25px;
     margin-top: 0
 }
-
+/* 3.1.4 Content text for slide */
 body #page .hero .htext .hinfo {
     font-size: 16px;
     color: grey;
@@ -269,42 +285,46 @@ body #page .hero .htext .hinfo {
     line-height: 25px
 }
 
+/******** Section 4 *********/
+/* 4.1 Tiles View */
+/* 4.1.1 Padding & Alignment */
 body #page .guide {
     padding: 40px 0;
     text-align: center
 }
-
+/* 4.1.2 H4 heading tag */
 body #page .guide h4 {
     font-size: 32px;
     color: #a19535;
     margin-bottom: 25px;
     margin-top: 0
 }
-
+/* 4.1.3 Horizontal line */
 body #page .guide hr {
     width: 50px;
     border: 1px solid #efefef;
     margin-bottom: 30px
 }
-
+/* 4.1.4 Heading text for each tile */
 body #page .guide .item-wrapper span {
     display: inline-block;
     color: black;
     font-size: 23px;
     margin-bottom: 20px
 }
-
+/* 4.1.5 Image in each tile */
 body #page .guide .item-wrapper img {
     width: 100%
 }
-
+/* 4.1.6 Paragraph tag for tile */
 body #page .guide .item-wrapper p {
     font-size: 15px;
     margin-top: 30px;
     color: grey;
     line-height: 25px
 }
-
+/******** Section 5 *********/
+/* 5.1 Bottom Image */
 body #page .btm-img {
     margin-top: 20px
 }
@@ -313,15 +333,18 @@ body #page .btm-img img {
     width: 100%
 }
 
+/* ****************************************************** Solutions Page ******************************************************* */
+/******** Section 1 *********/
+/* 1.1 Padding for Start of page */
 .solution .pcontainer-wrapper {
     padding-top: 100px
 }
-
+/* 1.1 Text Alignment for pcontainer class */
 .solution .pcontainer-wrapper .solutions {
     padding: 40px 0 0 0;
     text-align: center
 }
-
+/* 1.3 Heading "E-Mobility With Rimone" */
 .solution .pcontainer-wrapper .solutions h3 {
     text-align: center;
     color: #a19535;
@@ -329,16 +352,17 @@ body #page .btm-img img {
     font-weight: 600;
     margin-bottom: 10px
 }
-
+/* 1.3.1 HR tag for heading" */
 .solution .pcontainer-wrapper .solutions hr {
     width: 50px;
     border: 1px solid #efefef
 }
-
+/* 1.4 Pictures for Section 1" */
 .solution .pcontainer-wrapper .solutions .item-wrapper img {
     width: 100%
 }
-
+/******** Section 2 *********/
+/* 2.1 Horizontal Slide View */
 .solution .pcontainer-wrapper .heros {
     padding: 40px 0
 }
@@ -348,7 +372,7 @@ body #page .btm-img img {
     display: inline-block;
     margin: 40px 0
 }
-
+/* Animation/For small screens */
 @media screen and (max-width:768px) {
     .solution .pcontainer-wrapper .heros .item-wrapper .items {
         display: -webkit-box;
@@ -378,26 +402,26 @@ body #page .btm-img img {
         margin-bottom: 30px
     }
 }
-
+/* 2.2 Images for Section 2 */
 .solution .pcontainer-wrapper .heros .item-wrapper .items .img-wrapper img {
     width: 100%;
     border-radius: 10px
 }
-
+/* 2.3 H4 tag */
 .solution .pcontainer-wrapper .heros .item-wrapper .items .htext h4 {
     font-size: 32px;
     color: #a19535;
     margin-bottom: 25px;
     margin-top: 0
 }
-
+/* 2.3 Descriptive text for horizontal Slides */
 .solution .pcontainer-wrapper .heros .item-wrapper .items .htext .hinfo {
     font-size: 16px;
     color: grey;
     margin-bottom: 15px;
     line-height: 25px
 }
-
+/* 2.4 List format for Horizontal Slides*/
 .solution .pcontainer-wrapper .heros .item-wrapper .items .htext ul {
     margin: 0;
     padding-left: 16px
@@ -409,6 +433,7 @@ body #page .btm-img img {
     margin-bottom: 5px
 }
 
+/* ***************************************************** Personal Page ********************************************************* */
 .personal .item-wrapper {
     margin-bottom: 60px
 }
@@ -435,6 +460,7 @@ body #page .btm-img img {
     margin-bottom: 30px
 }
 
+/* ************************************************ Best Ways To Charge Page ************************************************** */
 .best_ways_to_charge hr {
     width: 50px;
     border: 1px solid #efefef
@@ -471,6 +497,8 @@ body #page .btm-img img {
 .best_ways_to_charge .ahero .htext p {
     text-align: center !important
 }
+
+/* ********************************************************** Type of EV's Page ************************************************************** */
 
 .types_of_evs .item-wrapper {
     margin-bottom: 60px
@@ -566,6 +594,8 @@ body #page .btm-img img {
     margin-bottom: 5px
 }
 
+/* ********************************************************** Charging Etiquettes Page ************************************************************** */
+
 .charging_etiquettes .heros {
     text-align: center
 }
@@ -620,6 +650,8 @@ body #page .btm-img img {
     }
 }
 
+/* ********************************************************** FAQ's Page ************************************************************** */
+
 .faqs .fqs {
     width: 55%;
     margin: 0 auto;
@@ -672,6 +704,8 @@ body #page .btm-img img {
     font-size: 8px
 }
 
+/* ********************************************************** Charging Basics Page ************************************************************** */
+
 .charging-basics h3 {
     font-size: 53px !important;
     margin-bottom: 30px !important
@@ -715,6 +749,8 @@ body #page .btm-img img {
     width: 50px;
     border: 1px solid #efefef
 }
+
+/* ********************************************************** Business Button Page ************************************************************** */
 
 .business h3 {
     margin-bottom: 30px !important
@@ -824,6 +860,8 @@ body #page .btm-img img {
     color: #a19535
 }
 
+/* ********************************************************** Fleet Button Page ************************************************************** */
+
 .fleet p.pinfo {
     width: 60%;
     font-size: 16px;
@@ -887,6 +925,8 @@ body #page .btm-img img {
     font-size: 33px !important;
     margin-bottom: 30px !important
 }
+
+/* ********************************************************** Pricing Page ************************************************************** */
 
 .pricing .pcontainer-wrapper {
     padding-top: 130px
@@ -968,6 +1008,8 @@ body #page .btm-img img {
     margin-right: 8px;
     font-size: 8px
 }
+
+/* ********************************************************** About Us Page ************************************************************** */
 
 .about .pcontainer-wrapper {
     padding-top: 130px
@@ -1160,6 +1202,8 @@ body #page .btm-img img {
     line-height: 25px
 }
 
+/* ********************************************************** Contact Us Page ************************************************************** */
+
 .contact .pcontainer-wrapper {
     padding-top: 130px
 }
@@ -1219,6 +1263,7 @@ body #page .btm-img img {
     font-size: 17px;
     color: grey
 }
+/* **********************************************************     Footer    ************************************************************** */
 
 .footer {
     padding: 40px 20px;
@@ -1331,7 +1376,7 @@ body #page .btm-img img {
 
 .footer .credit {
     margin-top: 55px;
-    color: #969696
+    color: #ffffff
 }
 
 .footer .credit .cc {
