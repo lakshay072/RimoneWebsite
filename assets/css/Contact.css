@@ -115,11 +115,17 @@ section {
 	color: rgba(14, 29, 52, 0.8);
 }
 
+/* 1.6 Form section CSS */
+.contact .php-email-form {
+	width: 100%;
+	background: #fff;
+}
 
+.contact .php-email-form .form-group {
+	padding-bottom: 8px;
+}
 
-
-
-/* Error message CSS */
+/* 1.8 Error message CSS */
 .contact .php-email-form .error-message {
 	display: none;
 	color: #fff;
@@ -136,7 +142,6 @@ section {
 .contact .php-email-form .error-message br+br {
 	margin-top: 25px;
 }
-
 
 .contact .php-email-form .loading {
 	display: none;
