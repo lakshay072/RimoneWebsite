@@ -1475,7 +1475,9 @@ body #page .btm-img img {
     position: revert;
     border-radius: 0 !important
 }
-
+.copyright {
+    color: #828282;
+}
 .wrap {
     position: relative
 }
