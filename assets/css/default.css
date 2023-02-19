@@ -23,7 +23,7 @@ body header {
 /* H.1 Background */
 body header .header-innerwrapper {
     background: rgba(0, 0, 0, 0.282);
-    position: absolute;
+    position:fixed;
     width: 100%;
     z-index: 999999;
     padding: 2px
@@ -1373,7 +1373,8 @@ body #page .btm-img img {
 .footer .fmenu h5 {
     color: white;
     font-size: 16px;
-    font-weight: 600
+    font-weight: 600;
+    margin-bottom: 0
 }
 /* F.7 List formatting */
 .footer .fmenu ul.footer-list {
@@ -1388,6 +1389,11 @@ body #page .btm-img img {
 
 .footer .fmenu ul.footer-list li a {
     color: white
+}
+
+.footer .fmenu ul.footer-list-2 {
+    margin: 0;
+    padding: 0
 }
 /* F.8 App logo section */
 .footer .app a {
@@ -1432,9 +1438,13 @@ body #page .btm-img img {
         margin-bottom: 30px
     }
 }
+.footer .year {
+    color: #828282;
+}
+
 
 .footer .credit .terms a {
-    color: #ffffff
+    color: #828282
 }
 /* F.12 Social site logos */
 .footer .credit .social {
