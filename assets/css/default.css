@@ -1378,8 +1378,8 @@ body #page .btm-img img {
 }
 /* F.7 List formatting */
 .footer .fmenu ul.footer-list {
-    margin: 0;
-    padding: 0
+    margin: 10;
+    padding: 10
 }
 
 .footer .fmenu ul.footer-list li {
@@ -1391,10 +1391,11 @@ body #page .btm-img img {
     color: white
 }
 
-.footer .fmenu ul.footer-list-2 {
-    margin: 0;
-    padding: 0
+a:hover {
+color: #ffc90e;
 }
+
+
 /* F.8 App logo section */
 .footer .app a {
     display: block;
