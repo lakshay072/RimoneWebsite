@@ -1299,7 +1299,7 @@ body #page .btm-img img {
 /* **********************************************************     Footer    ************************************************************** */
 /******** Section - Footer *********/
 .footer {
-    padding: 40px 20px;
+    padding: 40px 20px 5px ;
     background: black;
     overflow: auto;
     display: block
@@ -1308,17 +1308,17 @@ body #page .btm-img img {
 .footer .f-wrapper {
     border-bottom: 1px solid #f8e526;
     overflow: auto;
-    padding: 30px 0
+    padding: 1s0px 0px;
 }
 
 .footer span,
 .footer strong {
     color: white;
-    font-size: 16px
+    font-size: 14px
 }
 
 .footer span {
-    margin-top: 20px;
+    margin-top: 15px;
     display: inline-block
 }
 
@@ -1361,7 +1361,7 @@ body #page .btm-img img {
 }
 /* F.5 Rimone logo */
 .footer .cinfo .logo img {
-    width: 70px
+    width: 60px
 }
 
 @media screen and (max-width:768px) {
@@ -1372,27 +1372,28 @@ body #page .btm-img img {
 /* F.6 H5 Heading */
 .footer .fmenu h5 {
     color: white;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 0
+    margin-bottom: 10px;
 }
 /* F.7 List formatting */
 .footer .fmenu ul.footer-list {
     margin: 10;
-    padding: 10
+    padding: 8px 5px;
 }
 
 .footer .fmenu ul.footer-list li {
-    list-style: none;
-    margin-bottom: 10px
+    list-style:none;
+    margin-bottom: 10px;
 }
 
 .footer .fmenu ul.footer-list li a {
-    color: white
+    color: rgb(253, 253, 253);
+    text-decoration:none;
 }
 
-a:hover {
-color: #ffc90e;
+.footer .fmenu ul.footer-list li a:hover {
+color: #f6be47;
 }
 
 
