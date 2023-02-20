@@ -1376,6 +1376,9 @@ body #page .btm-img img {
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+
+
 /* F.7 List formatting */
 .footer .fmenu ul.footer-list {
     margin: 10;
@@ -1416,23 +1419,26 @@ color: #f6be47;
 }
 /* F.10 Credits section */
 .footer .credit {
-    margin-top: 55px;
-    color: #ffffff
+    display:flexbox;
+    margin-top: 2%;
+    color: #828282;
+    text-align: center;
+    text-decoration: none;
 }
 
 .footer .credit .cc {
-    text-align: left
+ text-align: center;
 }
 
 @media screen and (max-width:768px) {
     .footer .credit .cc {
         margin-bottom: 30px;
-        text-align: center
+        text-align: center;
     }
 }
 /* F.11 T&C CSS */
 .footer .credit .terms {
-    text-align: center
+    text-align: center;
 }
 
 @media screen and (max-width:768px) {
@@ -1441,34 +1447,40 @@ color: #f6be47;
     }
 }
 .footer .year {
+    text-align: center;
     color: #828282;
 }
 
 
-.footer .credit .terms a {
+.terms a {
     color: #828282
 }
 /* F.12 Social site logos */
-.footer .credit .social {
-    text-align: right
+
+.footer .social h5 {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 80px;
 }
 
 @media screen and (max-width:768px) {
-    .footer .credit .social {
+    .social {
         text-align: center
     }
 }
 
-.footer .credit .social a {
+.social a {
     padding: 10px;
-    background: white;
-    border-radius: 50%;
-    color: black;
-    margin-left: 10px
+    color: rgb(255, 255, 255);
+}
+
+.social a:hover {
+    color: #f6be47;
 }
 /* F.13 List formatting for social site logos */
-.footer .credit .social a i {
-    font-size: 15px
+.social a i {
+    font-size: 35px
 }
 
 .panel {
@@ -1477,9 +1489,7 @@ color: #f6be47;
     position: revert;
     border-radius: 0 !important
 }
-.copyright {
-    color: #828282;
-}
+
 .wrap {
     position: relative
 }
