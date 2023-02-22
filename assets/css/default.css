@@ -1425,38 +1425,32 @@ color: #f6be47;
     text-align: center;
     text-decoration: none;
 }
-
-.footer .credit .cc {
- text-align: center;
+/* Year class*/
+.footer .year {
+    display:inline;
+    text-decoration: none;
+    text-align: center;
+    color: #828282;
+}
+.footer .credit .copyright{
+    text-align: left;
 }
 
 @media screen and (max-width:768px) {
-    .footer .credit .cc {
-        margin-bottom: 30px;
+    .footer .credit .copyright {
+        margin-bottom: 10px;
         text-align: center;
     }
 }
 /* F.11 T&C CSS */
-.footer .credit .terms {
-    text-align: center;
+.footer .credit .tc{
+    text-align: right;
 }
 
-@media screen and (max-width:768px) {
-    .footer .credit .terms {
-        margin-bottom: 30px
-    }
-}
-.footer .year {
-    text-align: center;
-    color: #828282;
-}
-
-
-.terms a {
+.tc a {
     color: #828282
 }
 /* F.12 Social site logos */
-
 .footer .social h5 {
     color: white;
     font-size: 18px;
@@ -1466,7 +1460,8 @@ color: #f6be47;
 
 @media screen and (max-width:768px) {
     .social {
-        text-align: center
+        text-align: center;
+        margin-bottom: 20px;
     }
 }
 
@@ -1480,7 +1475,7 @@ color: #f6be47;
 }
 /* F.13 List formatting for social site logos */
 .social a i {
-    font-size: 35px
+    font-size: 35px;
 }
 
 .panel {
@@ -1493,3 +1488,4 @@ color: #f6be47;
 .wrap {
     position: relative
 }
+
