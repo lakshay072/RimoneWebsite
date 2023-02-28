@@ -2,7 +2,7 @@
 src = "https://smtpjs.com/v3/smtp.js"
 
 
-function sendEmail() {
+function sendclientEmail() {
 	let full_name = document.getElementById("full_name").value;
 	let email = document.getElementById("email").value;
 	let country = document.getElementById("country").value;
@@ -23,7 +23,7 @@ function sendEmail() {
 
 	Email.send({
 		SecureToken: "8bf2ba7d-ca56-4189-be3c-23fde8ec1b36",
-		To: "lakshay072@gmail.com",
+		To: "info@rimonecharge.com",
 		From: "headhunter0109@gmail.com",
 		Subject: "New entry from Client Us form : ",
 		Body: body,
@@ -54,3 +54,45 @@ function showquery(name) {
 // document.addEventListener("DOMContentLoaded", function () {
 // 	document.getElementById("form").setAttribute("autocomplete", "off");
 // });
+
+// <!-- Backend function for country code -->
+// <script>
+//   var input = document.querySelector("#phoneNumber");
+//   window.intlTelInput(input, {
+// 	// show dial codes too
+// 	separateDialCode: true,
+// 	// If there are some countries you want to show on the top.
+// 	preferredCountries: ["in", "us"],
+// 	//Default country
+// 	initialCountry: "in",
+// 	// show only these countres, remove all other
+// 	//onlyCountries: ["ru", "cn", "pk", "sg", "my", "bd"],
+// 	// If there are some countries you want to execlde.
+// 	// here we are exluding india and israel.
+// 	//excludeCountries: ["in", "il"]
+//   });
+
+src="https://smtpjs.com/v3/smtp.js"
+
+  function sendEmail() {
+	let first_name = document.getElementById("first_name").value;
+	let last_name = document.getElementById("last_name").value;
+	let email = document.getElementById("email").value;
+	let phone_no = document.getElementById("phone_no").value;
+	let message = document.getElementById("message").value;
+
+	let body = "First Name : " + first_name + "<br/> Last Name : " + last_name + "<br/> Email :" + email + "<br/> Phone Number :" + phone_no +
+	  "<br/> Message : " + message;
+
+	console.log(body);
+
+	Email.send({
+	  SecureToken : "8bf2ba7d-ca56-4189-be3c-23fde8ec1b36",
+	  To: "info@rimonecharge.com",
+	  From: "headhunter0109@gmail.com",
+	  Subject: "New entry from Contact Us form: ",
+	  Body: body
+	}).then(
+	  message => alert("Sent Successfully!")
+	);
+  }
