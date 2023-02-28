@@ -1,3 +1,7 @@
+src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"
+   
 $(function () {
     $(".owl-carousel").each(function () {
         $(this).owlCarousel({
@@ -36,3 +40,16 @@ $(document).ready(function () {
 $(document).ready(function () {
     $("body").show();
 });
+
+ // Font Awesome Icon
+src="https://kit.fontawesome.com/30f52323eb.js"
+
+// For Toggler
+// const mobile_nav = document.querySelector(".mobile-nav-btn");
+// const nav_header = document.querySelector(".header");
+
+// const toggleNavbar = () => {
+//     nav_header.classList.toggle("active");
+// };
+
+// mobile_nav?.addEventListener('click', () => toggleNavbar());
