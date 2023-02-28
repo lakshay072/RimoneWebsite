@@ -44,6 +44,9 @@ $(document).ready(function () {
  // Font Awesome Icon
 src="https://kit.fontawesome.com/30f52323eb.js"
 
+// Disable right click
+document.addEventListener('contextmenu', event => event.preventDefault());
+
 // For Toggler
 // const mobile_nav = document.querySelector(".mobile-nav-btn");
 // const nav_header = document.querySelector(".header");
